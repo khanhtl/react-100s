@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from 'react';
 import { Component } from "./01.component/Component";
 import { Condition } from "./02.condition/Condition";
 import { SingleCondition } from "./02.condition/SingleCondition";
@@ -9,7 +10,10 @@ import { Event } from "./05.events/Event";
 import { State } from "./06.state/State";
 import { StateObject } from "./06.state/StateObject";
 import { Reducer } from "./07.reducer/Reducer";
+import { Effect } from "./08.effect/Effect";
 function App() {
+  const [showEffect, setShowEffect] = useState(true);
+
   return (
     <div className="App">
       <h3>01.Component</h3>
@@ -37,6 +41,12 @@ function App() {
       <hr />
       <h3>Reducer</h3>
       <Reducer />
+      <hr />
+      <h3>Effect</h3>
+      {showEffect && <Effect />}
+      <br />
+      <button onClick={() => setShowEffect(!showEffect)}>Toggle Effect</button>
+      <hr />
     </div>
   );
 }
