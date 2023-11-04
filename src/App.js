@@ -6,6 +6,8 @@ import { Loop } from "./03.loop/Loop";
 import { Prop } from "./04.props/Prop";
 import { PropChildren } from "./04.props/PropChildren";
 import { Event } from "./05.events/Event";
+import { State } from "./06.state/State";
+import { StateObject } from "./06.state/StateObject";
 function App() {
   return (
     <div className="App">
@@ -27,6 +29,10 @@ function App() {
       <hr />
       <h3>05.Events</h3>
       <Event />
+      <h3>06.State</h3>
+      <State /> <br />
+      <h5>State object</h5>
+      <StateObject />
     </div>
   );
 }
