@@ -11,6 +11,7 @@ import { State } from "./06.state/State";
 import { StateObject } from "./06.state/StateObject";
 import { Reducer } from "./07.reducer/Reducer";
 import { Effect } from "./08.effect/Effect";
+import { Context } from "./09.context/Context";
 function App() {
   const [showEffect, setShowEffect] = useState(true);
 
@@ -39,13 +40,16 @@ function App() {
       <h5>State object</h5>
       <StateObject />
       <hr />
-      <h3>Reducer</h3>
+      <h3>07.Reducer</h3>
       <Reducer />
       <hr />
-      <h3>Effect</h3>
+      <h3>08.Effect</h3>
       {showEffect && <Effect />}
       <br />
       <button onClick={() => setShowEffect(!showEffect)}>Toggle Effect</button>
+      <hr />
+      <h3>09.Context</h3>
+      <Context />
       <hr />
     </div>
   );
