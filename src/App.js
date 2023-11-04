@@ -8,6 +8,7 @@ import { PropChildren } from "./04.props/PropChildren";
 import { Event } from "./05.events/Event";
 import { State } from "./06.state/State";
 import { StateObject } from "./06.state/StateObject";
+import { Reducer } from "./07.reducer/Reducer";
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,9 @@ function App() {
       <State /> <br />
       <h5>State object</h5>
       <StateObject />
+      <hr />
+      <h3>Reducer</h3>
+      <Reducer />
     </div>
   );
 }
