@@ -12,6 +12,8 @@ import { StateObject } from "./06.state/StateObject";
 import { Reducer } from "./07.reducer/Reducer";
 import { Effect } from "./08.effect/Effect";
 import { Context } from "./09.context/Context";
+import ErrorBoundary from "./10.error-boundary/ErrorBoundary";
+import { CounterBug } from "./10.error-boundary/CounterBug";
 function App() {
   const [showEffect, setShowEffect] = useState(true);
 
@@ -50,6 +52,11 @@ function App() {
       <hr />
       <h3>09.Context</h3>
       <Context />
+      <hr />
+      <h3>10.Error Boundary</h3>
+      <ErrorBoundary>
+        <CounterBug />
+      </ErrorBoundary>
       <hr />
     </div>
   );
